@@ -28,7 +28,7 @@ const sass = {
 module.exports = {
   entry: {
     'js/vendor.js': ['react', 'react-dom'],
-    'js/index.js': path.resolve(__dirname, 'index'),
+    'js/home.js': path.resolve(__dirname, 'home/index'),
     'css/main.css': path.resolve(__dirname, 'style.scss')
   },
   module: {

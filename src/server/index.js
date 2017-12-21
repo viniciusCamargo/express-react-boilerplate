@@ -17,7 +17,9 @@ app.get('/', (req, res) => {
     users: require('./data.json')
   })
 
-  res.render('index', { initialState, pageTitle: 'title he2re' })
+  res.render('index', { initialState, pageTitle: 'Home' })
 })
 
-app.listen(3003, () => l('http://localhost:3003'))
+
+const port = process.env.PORT || 3003
+app.listen(port, () => l(`http://localhost:${port}`))
